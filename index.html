@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <title>Whale Language</title>
+    <style>
+      .alert {
+        color: white;
+        margin: 5px;
+        padding: 5px;
+      }
+      .success {
+        background: green;
+      }
+      .error {
+        background: red;
+      }
+      .delete {
+        text-decoration: none;
+      }
+      #loading {
+        display: none;
+        text-align: center;
+      }
+      h3,p{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="columns">
+          <h3>Whale Language Converter</h3>
+          <p>Convert Human Language to Whale Language</p>
+          <form id="inputForm">
+            <label>Your Input</label>
+            <input
+              class="u-full-width"
+              type="text"
+              placeholder="Enter words or sentence to convert....."
+              id="userInput"
+            />
+
+            <input class="button-primary" type="submit" value="Convert" />
+          </form>
+          <br /><br />
+          <!-- Loader -->
+          <div id="loading">
+            <img src="giphy.gif" alt="" width="150px" />
+          </div>
+          <div class="container list-container">
+            <ul id="convertedInput"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
